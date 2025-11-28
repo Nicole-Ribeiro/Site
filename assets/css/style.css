@@ -371,7 +371,7 @@ body.full-width {
     border: 0.1rem solid var(--primary-color);
 }
 
-@media (max-width: 800) {
+@media (max-width: 800px) {
     .intro-content, .grid {
         grid-template-columns: 1fr;
     }
@@ -408,7 +408,7 @@ body.full-width {
         display: none;
     }
 
-    .Close-menu-label::after {
+    .close-menu-label::after {
         content: '☰';
         position: fixed;
         z-index: 2;
@@ -425,11 +425,11 @@ body.full-width {
         cursor: pointer;
     }
 
-    .Close-menu:checked~.menu {
+    .close-menu:checked~.menu {
         display: block;
     }
 
-    .Close-menu:checked~.Close-menu-label::after {
+    .close-menu:checked~.close-menu-label::after {
         content: '×';
     }
 
